@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1E8998BBECDB4EDE89F14CB2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0767C9D087FE4151A6FB58A8 /* CoreMotion.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		31E35FAA50724CE881A66F82 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5958042F3047D79C571C93 /* UIKit.framework */; };
+		3C8E7EE9307946FF97384B8C /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F12364D48A254118AFAA4791 /* AlipaySDK.bundle */; };
+		45E9188A2E324644989F4B8D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C3BDA3911F48249DC33F12 /* CoreTelephony.framework */; };
+		51B597D84C67420F99225C85 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B2DE27AEE00C4F0CBB21F2DD /* libsqlite3.0.tbd */; };
+		5488E8C80C2346DB88E1E729 /* alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = 367876AEBB354B21852BF6D7 /* alipay.m */; };
+		594C7C0888C2480D9DA71C23 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F39CE3B38FDA4BB7A711B928 /* libc++.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5E8151CC1EEA48108EC2BF12 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB34BEEF12E40D39244E13D /* libstdc++.6.tbd */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		6C0D42F619ED4924B9BB4F5E /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 846EBA97710B431C928CD39E /* CDVFile.m */; };
+		82B681E921014F1C9039BE47 /* CDVWechat.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9006B1DC054C32B6AE474C /* CDVWechat.m */; };
+		8323C5FCFBC44540847EDF17 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA9CA2DEF6742BB81D10FDB /* CFNetwork.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		94163F53A75445BCAE3DCC68 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = D2982982EBE14BB09FACC53F /* CDVViewController+SplashScreen.m */; };
+		9AA447312CEB4F7D943350FC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D5AF7D24B64734B71A3613 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A383A357F7644BC385A7322C /* AppVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD27F4D9084463F9B9DD4F4 /* AppVersion.m */; };
+		B1A19C1839D841959D22AD1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4435132E6B48AA849CA2A5 /* SystemConfiguration.framework */; };
+		B2048A39544F4231AF5B3F5A /* FileOpener2.m in Sources */ = {isa = PBXBuildFile; fileRef = A81698F315A44CD1B03AE588 /* FileOpener2.m */; };
+		BED2FD21180248C2B3F12FB3 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B776D3DE2C9B49989D30BCDA /* AlipaySDK.framework */; };
+		C17A7D50B2574162951337CD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9AD69688024CC1BAED9082 /* libWeChatSDK.a */; };
+		D1C3DEC89FEA4A93AD098D7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EC4AFC235450BB125C4EB /* Foundation.framework */; };
+		D8E1F5297706407C82B2308B /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F1BBEB3D3E9E4D159BB6D6D2 /* CDVSplashScreen.m */; };
+		DA33BECF5C304196971A4141 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172C7B14C28F4C5797EF31FB /* Security.framework */; };
+		E027085E1EAC4174B2F6A610 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5F43172CC4F34BBA20A12 /* CDVLocalFilesystem.m */; };
+		EDC7BC7FDE4F47AEAF612545 /* CDVFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 701B058AB44A41FD8B1F66CF /* CDVFileTransfer.m */; };
+		EE5751314EC840DA96539B8D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B5CD08C7713476B82B6F4C4 /* CoreText.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EEB457D32192BFB4006DEC34 /* libBaiduMobStat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457D22192BFB4006DEC34 /* libBaiduMobStat.a */; };
+		EEB457D52192C000006DEC34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457D42192C000006DEC34 /* CoreGraphics.framework */; };
+		EEB457D72192C015006DEC34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457D62192C015006DEC34 /* CoreLocation.framework */; };
+		EEB457D92192C021006DEC34 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457D82192C021006DEC34 /* AdSupport.framework */; };
+		EEB457DB2192C02D006DEC34 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457DA2192C02D006DEC34 /* libz.1.2.5.tbd */; };
+		EEB457DD2192C035006DEC34 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457DC2192C035006DEC34 /* libicucore.tbd */; };
+		EEB457DF2192C03D006DEC34 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB457DE2192C03D006DEC34 /* WebKit.framework */; };
+		F26A1FC0FAC4488B8B4D8EB1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 887CD6A22A7942BDAB560AA5 /* libz.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FDFBF9CB8EFE4135A9995FDD /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4BFC1BA3F64DEF9DFCA4BB /* CDVAssetLibraryFilesystem.m */; };
+		7590F260959C4FB09AD141B8 /* CDVAMap4Yxt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9968CDFCF5C945B29838766C /* CDVAMap4Yxt.m */; };
+		3B2BBEEEB24E4440B209FA2E /* MAMutablePolylineRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF3B854B9554532A59CCA53 /* MAMutablePolylineRenderer.m */; };
+		5E898DF5812B41419F4BD743 /* MAMutablePolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 02781BDF219F4E588F1694AB /* MAMutablePolyline.m */; };
+		1151B8A7C3A34C65A2C5AFA3 /* SBGMapHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C537DB82A1453AB547754A /* SBGMapHeaderView.m */; };
+		CA16C942FB8E48C7828F3884 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 10B9390C99464867BD798160 /* AMap.bundle */; };
+		CD67864A9887475C8051FE80 /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2CD7253549446591A7A82E /* AMapLocationKit.framework */; };
+		0BD1D9823E324E24B9E40CA7 /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64560EF86CC412288D5328B /* AMapFoundationKit.framework */; };
+		53E2B6E1A2C944E68136A1F0 /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B9CA099654482DACBD13D0 /* MAMapKit.framework */; };
+		FD5B44228CAE4BE6B6471AC3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF94470783F4EB0BBB0410D /* OpenGLES.framework */; };
+		B027E6A872B14D57B13B2D74 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59677EBC08964683AAEC95FF /* JavaScriptCore.framework */; };
+		B971399FB9F94963A7A02E93 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F83223ABD94009AF1D858A /* GLKit.framework */; };
+		25894B028807439DA45986DC /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C3737DB53874496180831E5A /* libstdc++.6.0.9.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		EE88593C218857DF00CCD6CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "卡戳/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		0767C9D087FE4151A6FB58A8 /* CoreMotion.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0AD27F4D9084463F9B9DD4F4 /* AppVersion.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AppVersion.m; path = "cordova-plugin-app-version/AppVersion.m"; sourceTree = "<group>"; };
+		172C7B14C28F4C5797EF31FB /* Security.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* 卡戳.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "卡戳.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24AF2DE045F44800BB04A0D4 /* WXApiObject.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = "cordova-plugin-wechat/WXApiObject.h"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		3069D061E87843F7AB86C7C7 /* AppVersion.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppVersion.h; path = "cordova-plugin-app-version/AppVersion.h"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* 卡戳-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "卡戳-Prefix.pch"; sourceTree = "<group>"; };
+		367876AEBB354B21852BF6D7 /* alipay.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = alipay.m; path = "cordova-plugin-alipay-v2/alipay.m"; sourceTree = "<group>"; };
+		41C3BDA3911F48249DC33F12 /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		43E3479BADCF45538B685E79 /* CDVFileTransfer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFileTransfer.h; path = "cordova-plugin-file-transfer/CDVFileTransfer.h"; sourceTree = "<group>"; };
+		4B5958042F3047D79C571C93 /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4BA78D426F2E4E7B985F7125 /* CDVSplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVSplashScreen.h; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; };
+		4CD5F43172CC4F34BBA20A12 /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocalFilesystem.m; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; };
+		5F9006B1DC054C32B6AE474C /* CDVWechat.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWechat.m; path = "cordova-plugin-wechat/CDVWechat.m"; sourceTree = "<group>"; };
+		6AB34BEEF12E40D39244E13D /* libstdc++.6.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "卡戳/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		6B5CD08C7713476B82B6F4C4 /* CoreText.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		701B058AB44A41FD8B1F66CF /* CDVFileTransfer.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVFileTransfer.m; path = "cordova-plugin-file-transfer/CDVFileTransfer.m"; sourceTree = "<group>"; };
+		7A4BFC1BA3F64DEF9DFCA4BB /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVAssetLibraryFilesystem.m; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; };
+		813EC4AFC235450BB125C4EB /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		846EBA97710B431C928CD39E /* CDVFile.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVFile.m; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; };
+		887CD6A22A7942BDAB560AA5 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		8BEC44EA1B60460092F59881 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* 卡戳-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "卡戳-Info.plist"; path = "卡戳/卡戳-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		A5C8C095D6584BBF8C3B8F54 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVAssetLibraryFilesystem.h; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; };
+		A6C0262DEC3344F48660561A /* CDVFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFile.h; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; };
+		A81698F315A44CD1B03AE588 /* FileOpener2.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FileOpener2.m; path = "cordova-plugin-vha-fileopener2/FileOpener2.m"; sourceTree = "<group>"; };
+		B2DE27AEE00C4F0CBB21F2DD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		B776D3DE2C9B49989D30BCDA /* AlipaySDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AlipaySDK.framework; path = "卡戳/Plugins/cordova-plugin-alipay-v2/AlipaySDK.framework"; sourceTree = "<group>"; };
+		BFDF8C58E7A84B34B193C9F5 /* FileOpener2.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FileOpener2.h; path = "cordova-plugin-vha-fileopener2/FileOpener2.h"; sourceTree = "<group>"; };
+		C1D5AF7D24B64734B71A3613 /* QuartzCore.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D2982982EBE14BB09FACC53F /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
+		D8A91E02CDEA4978B851D42D /* WXApi.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = "cordova-plugin-wechat/WXApi.h"; sourceTree = "<group>"; };
+		DA68D04EE5E040A1B05FADA8 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocalFilesystem.h; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; };
+		DF9AD69688024CC1BAED9082 /* libWeChatSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = "卡戳/Plugins/cordova-plugin-wechat/libWeChatSDK.a"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EEB457D02192BFB4006DEC34 /* BaiduMobStat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMobStat.h; sourceTree = "<group>"; };
+		EEB457D22192BFB4006DEC34 /* libBaiduMobStat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduMobStat.a; sourceTree = "<group>"; };
+		EEB457D42192C000006DEC34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EEB457D62192C015006DEC34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EEB457D82192C021006DEC34 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EEB457DA2192C02D006DEC34 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		EEB457DC2192C035006DEC34 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		EEB457DE2192C03D006DEC34 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F12364D48A254118AFAA4791 /* AlipaySDK.bundle */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		F1BBEB3D3E9E4D159BB6D6D2 /* CDVSplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVSplashScreen.m; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; };
+		F39CE3B38FDA4BB7A711B928 /* libc++.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F5DB3C6DD3804D67B4D7FB99 /* CDVWechat.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWechat.h; path = "cordova-plugin-wechat/CDVWechat.h"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "卡戳/config.xml"; sourceTree = "<group>"; };
+		FDA9CA2DEF6742BB81D10FDB /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FE4435132E6B48AA849CA2A5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9968CDFCF5C945B29838766C /* CDVAMap4Yxt.m */ = {isa = PBXFileReference; name = "CDVAMap4Yxt.m"; path = "cordova-plugin-amap/CDVAMap4Yxt.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		DFF3B854B9554532A59CCA53 /* MAMutablePolylineRenderer.m */ = {isa = PBXFileReference; name = "MAMutablePolylineRenderer.m"; path = "cordova-plugin-amap/MAMutablePolylineRenderer.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		02781BDF219F4E588F1694AB /* MAMutablePolyline.m */ = {isa = PBXFileReference; name = "MAMutablePolyline.m"; path = "cordova-plugin-amap/MAMutablePolyline.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		86C537DB82A1453AB547754A /* SBGMapHeaderView.m */ = {isa = PBXFileReference; name = "SBGMapHeaderView.m"; path = "cordova-plugin-amap/SBGMapHeaderView.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		306D555D248E410FB0DBFA17 /* CDVAMap4Yxt.h */ = {isa = PBXFileReference; name = "CDVAMap4Yxt.h"; path = "cordova-plugin-amap/CDVAMap4Yxt.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CC8CCA58616647C9BF18BDE2 /* MAMutablePolylineRenderer.h */ = {isa = PBXFileReference; name = "MAMutablePolylineRenderer.h"; path = "cordova-plugin-amap/MAMutablePolylineRenderer.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E1613F9476C44782B25DADFF /* MAMutablePolyline.h */ = {isa = PBXFileReference; name = "MAMutablePolyline.h"; path = "cordova-plugin-amap/MAMutablePolyline.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		535E944B4901460E8A55274B /* SBGMapHeaderView.h */ = {isa = PBXFileReference; name = "SBGMapHeaderView.h"; path = "cordova-plugin-amap/SBGMapHeaderView.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		10B9390C99464867BD798160 /* AMap.bundle */ = {isa = PBXFileReference; name = "AMap.bundle"; path = "AMap.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		CD2CD7253549446591A7A82E /* AMapLocationKit.framework */ = {isa = PBXFileReference; name = "AMapLocationKit.framework"; path = "卡戳/Plugins/cordova-plugin-amap/AMapLocationKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		F64560EF86CC412288D5328B /* AMapFoundationKit.framework */ = {isa = PBXFileReference; name = "AMapFoundationKit.framework"; path = "卡戳/Plugins/cordova-plugin-amap/AMapFoundationKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		22B9CA099654482DACBD13D0 /* MAMapKit.framework */ = {isa = PBXFileReference; name = "MAMapKit.framework"; path = "卡戳/Plugins/cordova-plugin-amap/MAMapKit.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		4BF94470783F4EB0BBB0410D /* OpenGLES.framework */ = {isa = PBXFileReference; name = "OpenGLES.framework"; path = "System/Library/Frameworks/OpenGLES.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		59677EBC08964683AAEC95FF /* JavaScriptCore.framework */ = {isa = PBXFileReference; name = "JavaScriptCore.framework"; path = "System/Library/Frameworks/JavaScriptCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		85F83223ABD94009AF1D858A /* GLKit.framework */ = {isa = PBXFileReference; name = "GLKit.framework"; path = "System/Library/Frameworks/GLKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		C3737DB53874496180831E5A /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = sourcecode.text-based-dylib-definition; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB457DF2192C03D006DEC34 /* WebKit.framework in Frameworks */,
+				EEB457DD2192C035006DEC34 /* libicucore.tbd in Frameworks */,
+				EEB457DB2192C02D006DEC34 /* libz.1.2.5.tbd in Frameworks */,
+				EEB457D92192C021006DEC34 /* AdSupport.framework in Frameworks */,
+				DA33BECF5C304196971A4141 /* Security.framework in Frameworks */,
+				EEB457D72192C015006DEC34 /* CoreLocation.framework in Frameworks */,
+				B1A19C1839D841959D22AD1A /* SystemConfiguration.framework in Frameworks */,
+				45E9188A2E324644989F4B8D /* CoreTelephony.framework in Frameworks */,
+				EEB457D52192C000006DEC34 /* CoreGraphics.framework in Frameworks */,
+				31E35FAA50724CE881A66F82 /* UIKit.framework in Frameworks */,
+				D1C3DEC89FEA4A93AD098D7A /* Foundation.framework in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				1E8998BBECDB4EDE89F14CB2 /* CoreMotion.framework in Frameworks */,
+				8323C5FCFBC44540847EDF17 /* CFNetwork.framework in Frameworks */,
+				594C7C0888C2480D9DA71C23 /* libc++.tbd in Frameworks */,
+				F26A1FC0FAC4488B8B4D8EB1 /* libz.tbd in Frameworks */,
+				EEB457D32192BFB4006DEC34 /* libBaiduMobStat.a in Frameworks */,
+				EE5751314EC840DA96539B8D /* CoreText.framework in Frameworks */,
+				9AA447312CEB4F7D943350FC /* QuartzCore.framework in Frameworks */,
+				BED2FD21180248C2B3F12FB3 /* AlipaySDK.framework in Frameworks */,
+				C17A7D50B2574162951337CD /* libWeChatSDK.a in Frameworks */,
+				51B597D84C67420F99225C85 /* libsqlite3.0.tbd in Frameworks */,
+				5E8151CC1EEA48108EC2BF12 /* libstdc++.6.tbd in Frameworks */,
+				CD67864A9887475C8051FE80 /* AMapLocationKit.framework in Frameworks */,
+				0BD1D9823E324E24B9E40CA7 /* AMapFoundationKit.framework in Frameworks */,
+				53E2B6E1A2C944E68136A1F0 /* MAMapKit.framework in Frameworks */,
+				FD5B44228CAE4BE6B6471AC3 /* OpenGLES.framework in Frameworks */,
+				B027E6A872B14D57B13B2D74 /* JavaScriptCore.framework in Frameworks */,
+				B971399FB9F94963A7A02E93 /* GLKit.framework in Frameworks */,
+				25894B028807439DA45986DC /* libstdc++.6.0.9.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "卡戳/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* 卡戳.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EEB457D02192BFB4006DEC34 /* BaiduMobStat.h */,
+				EEB457D22192BFB4006DEC34 /* libBaiduMobStat.a */,
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* 卡戳-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "卡戳";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* 卡戳-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				F12364D48A254118AFAA4791 /* AlipaySDK.bundle */,
+				10B9390C99464867BD798160 /* AMap.bundle */,
+			);
+			name = Resources;
+			path = "卡戳/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEB457DE2192C03D006DEC34 /* WebKit.framework */,
+				EEB457DC2192C035006DEC34 /* libicucore.tbd */,
+				EEB457DA2192C02D006DEC34 /* libz.1.2.5.tbd */,
+				EEB457D82192C021006DEC34 /* AdSupport.framework */,
+				EEB457D62192C015006DEC34 /* CoreLocation.framework */,
+				EEB457D42192C000006DEC34 /* CoreGraphics.framework */,
+				41C3BDA3911F48249DC33F12 /* CoreTelephony.framework */,
+				FE4435132E6B48AA849CA2A5 /* SystemConfiguration.framework */,
+				0767C9D087FE4151A6FB58A8 /* CoreMotion.framework */,
+				FDA9CA2DEF6742BB81D10FDB /* CFNetwork.framework */,
+				F39CE3B38FDA4BB7A711B928 /* libc++.tbd */,
+				887CD6A22A7942BDAB560AA5 /* libz.tbd */,
+				6B5CD08C7713476B82B6F4C4 /* CoreText.framework */,
+				4B5958042F3047D79C571C93 /* UIKit.framework */,
+				C1D5AF7D24B64734B71A3613 /* QuartzCore.framework */,
+				813EC4AFC235450BB125C4EB /* Foundation.framework */,
+				B776D3DE2C9B49989D30BCDA /* AlipaySDK.framework */,
+				DF9AD69688024CC1BAED9082 /* libWeChatSDK.a */,
+				B2DE27AEE00C4F0CBB21F2DD /* libsqlite3.0.tbd */,
+				172C7B14C28F4C5797EF31FB /* Security.framework */,
+				6AB34BEEF12E40D39244E13D /* libstdc++.6.tbd */,
+				CD2CD7253549446591A7A82E /* AMapLocationKit.framework */,
+				F64560EF86CC412288D5328B /* AMapFoundationKit.framework */,
+				22B9CA099654482DACBD13D0 /* MAMapKit.framework */,
+				4BF94470783F4EB0BBB0410D /* OpenGLES.framework */,
+				59677EBC08964683AAEC95FF /* JavaScriptCore.framework */,
+				85F83223ABD94009AF1D858A /* GLKit.framework */,
+				C3737DB53874496180831E5A /* libstdc++.6.0.9.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				EE88593D218857DF00CCD6CC /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				367876AEBB354B21852BF6D7 /* alipay.m */,
+				0AD27F4D9084463F9B9DD4F4 /* AppVersion.m */,
+				3069D061E87843F7AB86C7C7 /* AppVersion.h */,
+				846EBA97710B431C928CD39E /* CDVFile.m */,
+				4CD5F43172CC4F34BBA20A12 /* CDVLocalFilesystem.m */,
+				7A4BFC1BA3F64DEF9DFCA4BB /* CDVAssetLibraryFilesystem.m */,
+				A6C0262DEC3344F48660561A /* CDVFile.h */,
+				DA68D04EE5E040A1B05FADA8 /* CDVLocalFilesystem.h */,
+				A5C8C095D6584BBF8C3B8F54 /* CDVAssetLibraryFilesystem.h */,
+				701B058AB44A41FD8B1F66CF /* CDVFileTransfer.m */,
+				43E3479BADCF45538B685E79 /* CDVFileTransfer.h */,
+				F1BBEB3D3E9E4D159BB6D6D2 /* CDVSplashScreen.m */,
+				D2982982EBE14BB09FACC53F /* CDVViewController+SplashScreen.m */,
+				4BA78D426F2E4E7B985F7125 /* CDVSplashScreen.h */,
+				8BEC44EA1B60460092F59881 /* CDVViewController+SplashScreen.h */,
+				A81698F315A44CD1B03AE588 /* FileOpener2.m */,
+				BFDF8C58E7A84B34B193C9F5 /* FileOpener2.h */,
+				5F9006B1DC054C32B6AE474C /* CDVWechat.m */,
+				F5DB3C6DD3804D67B4D7FB99 /* CDVWechat.h */,
+				D8A91E02CDEA4978B851D42D /* WXApi.h */,
+				24AF2DE045F44800BB04A0D4 /* WXApiObject.h */,
+				9968CDFCF5C945B29838766C /* CDVAMap4Yxt.m */,
+				DFF3B854B9554532A59CCA53 /* MAMutablePolylineRenderer.m */,
+				02781BDF219F4E588F1694AB /* MAMutablePolyline.m */,
+				86C537DB82A1453AB547754A /* SBGMapHeaderView.m */,
+				306D555D248E410FB0DBFA17 /* CDVAMap4Yxt.h */,
+				CC8CCA58616647C9BF18BDE2 /* MAMutablePolylineRenderer.h */,
+				E1613F9476C44782B25DADFF /* MAMutablePolyline.h */,
+				535E944B4901460E8A55274B /* SBGMapHeaderView.h */,
+			);
+			name = Plugins;
+			path = "卡戳/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* 卡戳 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "卡戳" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "卡戳";
+			productName = "卡戳";
+			productReference = 1D6058910D05DD3D006BFB54 /* 卡戳.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = H4XQ6MSKLF;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "卡戳" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* 卡戳 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE88593D218857DF00CCD6CC /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = EE88593C218857DF00CCD6CC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				3C8E7EE9307946FF97384B8C /* AlipaySDK.bundle in Resources */,
+				CA16C942FB8E48C7828F3884 /* AMap.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				5488E8C80C2346DB88E1E729 /* alipay.m in Sources */,
+				A383A357F7644BC385A7322C /* AppVersion.m in Sources */,
+				6C0D42F619ED4924B9BB4F5E /* CDVFile.m in Sources */,
+				E027085E1EAC4174B2F6A610 /* CDVLocalFilesystem.m in Sources */,
+				FDFBF9CB8EFE4135A9995FDD /* CDVAssetLibraryFilesystem.m in Sources */,
+				EDC7BC7FDE4F47AEAF612545 /* CDVFileTransfer.m in Sources */,
+				D8E1F5297706407C82B2308B /* CDVSplashScreen.m in Sources */,
+				94163F53A75445BCAE3DCC68 /* CDVViewController+SplashScreen.m in Sources */,
+				B2048A39544F4231AF5B3F5A /* FileOpener2.m in Sources */,
+				82B681E921014F1C9039BE47 /* CDVWechat.m in Sources */,
+				7590F260959C4FB09AD141B8 /* CDVAMap4Yxt.m in Sources */,
+				3B2BBEEEB24E4440B209FA2E /* MAMutablePolylineRenderer.m in Sources */,
+				5E898DF5812B41419F4BD743 /* MAMutablePolyline.m in Sources */,
+				1151B8A7C3A34C65A2C5AFA3 /* SBGMapHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = H4XQ6MSKLF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"卡戳/Plugins/cordova-plugin-alipay-v2\"",
+					"\"卡戳/Plugins/cordova-plugin-amap\"",
+					"\"卡戳/Plugins/cordova-plugin-amap\"",
+					"\"卡戳/Plugins/cordova-plugin-amap\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "卡戳/卡戳-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "卡戳/卡戳-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/卡戳/Plugins/cordova-plugin-wechat\"",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "卡戳";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = H4XQ6MSKLF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"卡戳/Plugins/cordova-plugin-alipay-v2\"",
+					"\"卡戳/Plugins/cordova-plugin-amap\"",
+					"\"卡戳/Plugins/cordova-plugin-amap\"",
+					"\"卡戳/Plugins/cordova-plugin-amap\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "卡戳/卡戳-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "卡戳/卡戳-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/卡戳/Plugins/cordova-plugin-wechat\"",
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "卡戳";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "卡戳" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "卡戳" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

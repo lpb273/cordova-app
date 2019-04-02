@@ -1,0 +1,80 @@
+{
+  "_from": "cordova-plugin-amap",
+  "_id": "cordova-plugin-amap@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-b+AO4tSRzXKGJpsj1mAdgtf6x3YsDPRQHaK6UQOz1XvcJRo+tjn6Y3SU/fbX73dlpHw+DVen982rl76ORgdnJA==",
+  "_location": "/cordova-plugin-amap",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-amap",
+    "name": "cordova-plugin-amap",
+    "escapedName": "cordova-plugin-amap",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-amap/-/cordova-plugin-amap-2.0.1.tgz",
+  "_shasum": "42324a0c9fcfe356df1fd28adfe5ec856f2c6f17",
+  "_spec": "cordova-plugin-amap",
+  "_where": "/Users/lpb/Desktop/kachuoweb_svn/kachuoAPPCordova",
+  "author": {
+    "name": "piaoxiang"
+  },
+  "bugs": {
+    "url": "https://github.com/Silverbase-FE/cordova-plugin-amap/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-amap",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Amap Maps native SDK for Android and iOS.\nThis plugin allows your application to use the native Amap Maps views instead of the Amap Maps JavaScript API v3.\nThe native map view is faster, use less network usage, display 3D views, and even work on offline network.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.1.0"
+    },
+    {
+      "name": "cordova-android",
+      "version": ">=5.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.0.0"
+    },
+    {
+      "name": "apple-xcode",
+      "version": ">=9.0.0"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=10.0.0"
+    }
+  ],
+  "homepage": "https://github.com/Silverbase-FE/cordova-plugin-amap#readme",
+  "keywords": [
+    "amap",
+    "maps",
+    "geo",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "Apache 2.0 License",
+  "name": "cordova-plugin-amap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Silverbase-FE/cordova-plugin-amap.git"
+  },
+  "version": "2.0.1"
+}

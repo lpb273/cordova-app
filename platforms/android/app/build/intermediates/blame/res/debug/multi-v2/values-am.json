@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/lpb/Desktop/kachuoweb/kachuo-cordova/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml",
+            "map": [
+                {
+                    "source": "/Users/lpb/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/2dd70fd4a79e6b13fc048a14175de82b/res/values-am/values-am.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/lpb/Desktop/kachuoweb_svn/kachuoAPPCordova/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml",
+            "map": [
+                {
+                    "source": "/Users/lpb/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/63a46e9ff5296117de1dd0e2ca71b2c2/res/values-am/values-am.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}
